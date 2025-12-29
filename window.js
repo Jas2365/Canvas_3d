@@ -58,14 +58,69 @@ export const project = ({x, y, z}) => {
 export const translate_z = ({x, y, z}, dz) => {
   return {x, y, z: z + dz}
 }
-
-export const rotate_xz = ({x, y, z}, angle) => {
+export const rotate_opp_xy = ({x, y, z}, angle) => {
+  // Standard 2D rotation in the XY plane by `angle`:
+  // [ x' ]   [ cos -sin ] [ x ]
+  // [ y' ] = [ sin  cos ] [ y ]
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return {
+    x: x*c - y*s,
+    y: x*s + y*c,
+    z,
+  }
+}
+export const rotate_opp_xz = ({x, y, z}, angle) => {
   const c = Math.cos(angle)
   const s = Math.sin(angle)
   return {
     x: x*c - z*s,
     y,
     z: x*s + z*c,
+  }
+}
+export const rotate_opp_zy = ({x, y, z}, angle) => {
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return {
+    x,
+    // rotation in the YZ plane by -angle (inverse rotation)
+    // y' = y*c + z*s
+    // z' = -y*s + z*c
+    y: y*c + z*s,
+    z: -y*s + z*c,
+  }
+}
+
+export const rotate_xz = ({x, y, z}, angle) => {
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return {
+    x: x*c + z*s,
+    y,
+    z: -x*s + z*c,
+  }
+}
+export const rotate_xy = ({x, y, z}, angle) => {
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return {
+    // Rotation by -angle (inverse rotation)
+    x: x*c + y*s,
+    y: -x*s + y*c,
+    z,
+  }
+}
+export const rotate_zy = ({x, y, z}, angle) => {
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return {
+    x,
+    // rotation in the YZ plane by +angle
+    // y' = y*c - z*s
+    // z' = y*s + z*c
+    y: y*c - z*s,
+    z: y*s + z*c,
   }
 }
 

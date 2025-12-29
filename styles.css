@@ -1,0 +1,23 @@
+body {
+    background-color: dimgrey;
+    color: aliceblue;
+}
+
+#container {
+    display: flex;
+}
+
+.cube {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.movement {
+    display : grid;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+.rotation {
+    display : grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

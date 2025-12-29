@@ -1,6 +1,50 @@
 <!DOCTYPE html>
-<body style="background-color: dimgrey;" >
-  <canvas id="canvas_window"></canvas>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <canvas id="canvas_window"></canvas>
+    <div id="controls">
+      <div class="cube">
+        <input type="number" min="0.23" max="7" id="cube_size">
+        <button id="cube_size_btn" >enter cube</button> 
+      </div>
+        <div class="cube_ctrl">
+          <div class="movement">
+            <button id="c_up" >up</button>
+            <button id="c_down" >down</button>
+            <button id="c_left" >left</button>
+            <button id="c_right" >right</button>
+            <button id="c_front" >front</button>
+            <button id="c_back" >back</button>
+          </div>
+          <div class="rotation">
+            <button id="c_rotate_cx" >rotate_cx</button>
+            <button id="c_rotate_acx" >rotate_acx</button>
+            <button id="c_conn_rotate_cx" >conn_rotate_cx</button>
+            <button id="c_conn_rotate_acx" >conn_rotate_acx</button>
+            
+            <button id="c_rotate_cy" >rotate_cy</button>
+            <button id="c_rotate_acy" >rotate_acy</button>
+            <button id="c_conn_rotate_cy" >conn_rotate_cy</button>
+            <button id="c_conn_rotate_acy" >conn_rotate_acy</button>
+            
+            <button id="c_rotate_cz" >rotate_cz</button>
+            <button id="c_rotate_acz" >rotate_acz</button>
+            <button id="c_conn_rotate_cz" >conn_rotate_cz</button>
+            <button id="c_conn_rotate_acz" >conn_rotate_acz</button>
+          </div>
+      </div>
+      <div>
+        <button id="output_cube" disabled >output cube</button> 
+        <div id="output_list"></div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="window.js" type="module"></script>
 </body>
 <script src="main.js" type="module" ></script>
