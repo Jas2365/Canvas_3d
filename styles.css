@@ -1,6 +1,12 @@
 body {
+    /* background: #ffbb00;
+    background: linear-gradient(90deg,rgba(255, 187, 0, 1) 0%, rgba(239, 246, 179, 1) 49%, rgba(136, 204, 67, 1) 100%); */
+   /* background: #6DFFFF;
+background: linear-gradient(90deg,rgba(109, 255, 255, 1) 0%, rgba(232, 234, 237, 1) 50%, rgba(255, 136, 175, 1) 100%); */
     background-color: dimgrey;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
 
 #container {

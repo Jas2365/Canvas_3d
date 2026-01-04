@@ -5,11 +5,20 @@ const wnd_can = canvas_window
 const wnd_can_w = 800
 const wnd_can_h = 800
 
+
+
+
+// wnd_can.width = cols * cell_size;
+// wnd_can.height = rows * cell_size;
+
 wnd_can.width = wnd_can_w
 wnd_can.height = wnd_can_h
 
-const ctx = wnd_can.getContext("2d")
+export const get_wnd_w = () => {return wnd_can.width }
+export const get_wnd_h = () => {return wnd_can.heighth }
 
+
+const ctx = wnd_can.getContext("2d")
 let global_fps = 60
 
 export const set_fps = (fps) => {
@@ -25,15 +34,23 @@ export const clear = () => {
   ctx.fillStyle = colors.black
   ctx.fillRect(0, 0, wnd_can_w, wnd_can_h)
 }
-export const point = ({x, y}) => {
-  const s = 20
+// export const point = ({x, y}, color = colors.light_green) => {
+//   ctx.fillStyle = color
+//   ctx.fillRect(x *cell_size, y *cell_size, cell_size, cell_size)
+// }
+export const point = ({x, y}, size = 10) => {
+  const s = size
   ctx.fillStyle = colors.light_green
   ctx.fillRect(x - s/2, y - s/2, s, s)
 }
-
-export const line = (p1, p2) => {
+export const draw_pxl = ({x, y}, size = 10, color = colors.light_green) => {
+  const s = size
+  ctx.fillStyle = colors.light_green
+  ctx.fillRect(x, y, s, s)
+}
+export const line = (p1, p2, color = colors.light_green) => {
   ctx.lineWidth = 3
-  ctx.strokeStyle = colors.light_green
+  ctx.strokeStyle = color
   ctx.beginPath()
   ctx.moveTo(p1.x, p1.y)
   ctx.lineTo(p2.x, p2.y)
