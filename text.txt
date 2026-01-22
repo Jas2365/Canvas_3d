@@ -1,0 +1,162 @@
+
+if(VAL >= 27000){
+    val -= 650
+    if(val > 29000){
+        break
+    }
+    exit
+}
+
+
+function cond(val, min, max, inc){
+    if(val >= min){
+        val -= inc
+        if(val > max) break
+    }
+}
+
+27000
+    650 
+
+29000
+    725
+
+32500
+    800
+
+35700       
+
+=============================
+Function Dect(x As Double) As Double
+  If (x >= 27650 And x <= 29600) Then
+        Dect = x - 650
+    ElseIf (x >= 29600 And x <= 31775) Then
+        Dect = x - 725
+    ElseIf (x >= 31775 And x <= 32500) Then
+        Dect = x - 725
+    ElseIf (x >= 32500 And x <= 34100) Then
+        Dect = x - 800
+    ElseIf (x >= 34100 And x <= 35700) Then
+        Dect = x - 800
+    ElseIf (x >= 35700 And x <= 37500) Then
+        Dect = x - 900
+    ElseIf (x >= 37500 And x <= 39300) Then
+        Dect = x - 900
+    ElseIf (x >= 39300 And x <= 41300) Then
+        Dect = x - 1000
+    ElseIf (x >= 41300 And x <= 43300) Then
+        Dect = x - 1000
+    ElseIf (x >= 43300 And x <= 44425) Then
+        Dect = x - 1125
+    ElseIf (x >= 44425 And x <= 46675) Then
+        Dect = x - 1125
+    ElseIf (x >= 46675 And x <= 47800) Then
+        Dect = x - 1125
+    ElseIf (x >= 47800 And x <= 49050) Then
+        Dect = x - 1250
+    ElseIf (x >= 49050 And x <= 52800) Then
+        Dect = x - 1250
+    ElseIf (x >= 52800 And x <= 54175) Then
+        Dect = x - 1375
+    ElseIf (x >= 54175 And x <= 58300) Then
+        Dect = x - 1375
+    ElseIf (x >= 58300 And x <= 61300) Then
+        Dect = x - 1500
+    ElseIf (x >= 61300 And x <= 64300) Then
+        Dect = x - 1500
+    ElseIf (x >= 64300 And x <= 65950) Then
+        Dect = x - 1650
+    ElseIf (x >= 65950 And x <= 67600) Then
+        Dect = x - 1650
+    ElseIf (x >= 67600 And x <= 69250) Then
+        Dect = x - 1650
+    ElseIf (x >= 69250 And x <= 72550) Then
+        Dect = x - 1650
+    ElseIf (x >= 72550 And x <= 74200) Then
+        Dect = x - 1650
+    ElseIf (x >= 74200 And x <= 76100) Then
+        Dect = x - 1900
+    ElseIf (x >= 76100 And x <= 78000) Then
+        Dect = x - 1900
+    ElseIf (x >= 78000 And x <= 81800) Then
+        Dect = x - 1900
+    ElseIf (x >= 81800 And x <= 83700) Then
+        Dect = x - 1900
+    ElseIf (x >= 83700 And x <= 85600) Then
+        Dect = x - 1900
+    ElseIf (x >= 85600 And x <= 87900) Then
+        Dect = x - 2300
+    ElseIf (x >= 87900 And x <= 90200) Then
+        Dect = x - 2300
+    ElseIf (x >= 90200 And x <= 92500) Then
+        Dect = x - 2300
+    ElseIf (x >= 92500 And x <= 97100) Then
+        Dect = x - 2300
+    ElseIf (x >= 97100 And x <= 99400) Then
+        Dect = x - 2300
+    ElseIf (x >= 99400 And x <= 107500) Then
+        Dect = x - 2700
+    ElseIf (x >= 107500 And x <= 112900) Then
+        Dect = x - 2700
+    ElseIf (x >= 112900 And x <= 115600) Then
+        Dect = x - 2700
+    ElseIf (x >= 115600 And x <= 118700) Then
+        Dect = x - 3100
+    ElseIf (x >= 118700 And x <= 124900) Then
+        Dect = x - 3100
+    ElseIf (x >= 124900 And x <= 131100) Then
+        Dect = x - 3100
+    ElseIf (x >= 131100 And x <= 134200) Then
+        Dect = x - 3100
+    ElseIf (x >= 134200 And x <= 141200) Then
+        Dect = x - 3500
+    ElseIf (x >= 141200 And x <= 144700) Then
+        Dect = x - 3500
+    ElseIf (x >= 144700 And x <= 148200) Then
+        Dect = x - 3500
+    ElseIf (x >= 148200 And x <= 155200) Then
+        Dect = x - 3500
+    ElseIf (x >= 155200 And x <= 159200) Then
+        Dect = x - 4000
+    ElseIf (x >= 159200 And x <= 163200) Then
+        Dect = x - 4000
+    ElseIf (x >= 163200 And x <= 167200) Then
+        Dect = x - 4000
+    ElseIf (x >= 167200 And x <= 171200) Then
+        Dect = x - 4000
+    ElseIf (x >= 171200 And x <= 175200) Then
+        Dect = x - 4000
+    ElseIf (x >= 175200 And x <= 179200) Then
+        Dect = x - 4000
+    ElseIf (x >= 179200 And x <= 188200) Then
+        Dect = x - 4500
+    ElseIf (x >= 188200 And x <= 197200) Then
+        Dect = x - 5000
+    ElseIf (x >= 197200 And x <= 206200) Then
+        Dect = x - 5000
+    ElseIf (x >= 206200 And x <= 226200) Then
+        Dect = x - 5000
+    ElseIf (x >= 226200 And x <= 241200) Then
+        Dect = x - 5000
+    End If
+End Function
+
+
+==========================
+    If && x <= nn) t (x >= nn) && x <= nn) t then
+        Dect = x - dd
+    ElseIf (x >= nn) then
+        Dect = x - dd
+
+    End 
+    
+
+    a1 a2 old new
+
+    if(al){
+        old
+    }else if(a2) {
+        new        
+    } else {
+        zero
+    }
